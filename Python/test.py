@@ -1,13 +1,12 @@
-# from random import randint
-# from time import sleep
-
-# # Sleep a random number of seconds (between 1 and 5)
-# print("start")
-# sleep(randint(1,5))
-# # print("stop")
-# import pyttsx3
-#
-# text_speech = pyttsx3.init()
-# answer = input("what")
-# text_speech.say(answer)
-# text_speech.runAndWait
+# Import the required module for text 
+# to speech conversion
+import pyttsx3
+ 
+# init function to get an engine instance for the speech synthesis
+engine = pyttsx3.init()
+ 
+# say method on the engine that passing input text to be spoken
+engine.say('Hello sir, how may I help you, sir.')
+ 
+# run and wait method, it processes the voice commands.
+engine.runAndWait()
