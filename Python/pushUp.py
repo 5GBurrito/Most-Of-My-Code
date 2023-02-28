@@ -1,6 +1,7 @@
 from random import randint
 import random
 from time import sleep
+import pyttsx3
 
 
 list = [
