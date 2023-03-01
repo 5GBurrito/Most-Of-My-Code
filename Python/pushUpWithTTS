@@ -8,19 +8,32 @@ def speak(text):
      engine.runAndWait()
 
 list = [
-    "All the way up",
     "All the way down",
+    "All the way up",
     "Half way down",
     "One quarter down",
     "Three quarters down"
 ]
+count = 1
+first = True
+lastValue = 0
 
 print("Welcome to the jungle!")
 speak("Welcome to the jungle!")
 time.sleep(3.5)
 
 while True:
-    value = random.randint(0, 4)
+    if first == True:
+        value = random.randint(1, 4)
+        first = False
+    else:
+        value = random.randint(0, 4)
     print(list[value])
     speak(list[value])
-    time.sleep(random.randint(5, 10))
+    if value == 0:
+        if lastValue != 0:
+            print(count)
+            speak(count)
+        count = count + 1
+    lastValue = value
+    time.sleep(0.1)
