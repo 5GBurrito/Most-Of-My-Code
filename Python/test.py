@@ -1,8 +1,8 @@
-import pyttsx3 
+import pyttsx3
 
 def speak(text):
      engine = pyttsx3.init()
      engine.say(text)
      engine.runAndWait()
-text = 'hello'
-speak(text)
+
+speak(input())
