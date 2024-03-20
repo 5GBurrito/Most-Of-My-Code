@@ -30,8 +30,8 @@ while True:
     currentSound = selectSound()
     print("Next sound: " + currentSound + "\n")
 
-    timer = 5
-    #timer = random.randint(30, 600)
+    #timer = 5
+    timer = random.randint(30, 600)
 
     for i in range(timer):
         print("remaining time:", timer - i)
