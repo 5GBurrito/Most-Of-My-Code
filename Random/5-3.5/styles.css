@@ -16,29 +16,3 @@
     display: flex;
 }
 
-.top-left-section,
-.top-right-section,
-.bottom-left-section,
-.bottom-right-section {
-    margin-bottom: 30px;
-}
-
-.top-left-section,
-.bottom-left-section {
-    border-top-left-radius: 20px;
-}
-
-.top-right-section,
-.bottom-right-section {
-    border-top-right-radius: 20px;
-}
-
-.top-left-section,
-.top-right-section {
-    border-bottom-left-radius: 20px;
-}
-
-.bottom-left-section,
-.bottom-right-section {
-    border-bottom-right-radius: 20px;
-}
