@@ -1,0 +1,81 @@
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.navbar {
+    padding: 20px 0; /* Increase the padding */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+}
+
+.navbar-brand {
+    display: block; /* Ensure it's a block-level element */
+}
+
+.navbar-nav {
+    display: flex; /* Use flexbox */
+}
+
+.navbar-nav .nav-link {
+    padding-right: 20px; /* Add some spacing between the nav items */
+}
+
+.jumbotron {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.content-box img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+.top-left-section,
+.top-right-section,
+.bottom-left-section,
+.bottom-right-section {
+    margin-bottom: 30px;
+}
+
+.top-left-section,
+.bottom-left-section {
+    border-top-left-radius: 20px;
+}
+
+.top-right-section,
+.bottom-right-section {
+    border-top-right-radius: 20px;
+}
+
+.top-left-section,
+.top-right-section {
+    border-bottom-left-radius: 20px;
+}
+
+.bottom-left-section,
+.bottom-right-section {
+    border-bottom-right-radius: 20px;
+}
+
+/* Hover effect */
+.top-left-section:hover .content-box,
+.top-right-section:hover .content-box,
+.bottom-left-section:hover .content-box,
+.bottom-right-section:hover .content-box {
+    transform: scale(1.05);
+}
