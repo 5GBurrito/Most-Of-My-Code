@@ -16,7 +16,7 @@ value1 = int(input("What day of the month is your birthday?     "))
 value2 = input("What did you eat for breakfast?     ")
 
 for i in range(value1):
-    value3 = len(value2)
+    value3 = len(value2) + value1
 
 value4 = value1*value3
 
