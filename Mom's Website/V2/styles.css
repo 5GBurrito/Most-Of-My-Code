@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+/* Navbar Styles */
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dark Mode - Navbar Links */
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.8); /* Set to black for visibility */
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 1.0); /* Darker on hover */
+}
+
+/* Gallery Styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, border-color 0.3s;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item .gallery-text {
+    margin-top: 10px;
+    color: #333;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Contact Info Styles */
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Light Mode Styles */
+body:not(.dark-mode) .gallery-item {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .gallery-item:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar-light {
+    background-color: #333;
+}
+
+body.dark-mode .gallery-item {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .gallery-item .gallery-text {
+    color: #ccc;
+}
+ 
