@@ -14,22 +14,38 @@
 <body class="dark-mode">
 
 <!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Photography Co.</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Deep in the Heart Photos.</a>
+    <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-dark bg-dark"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#about">Welcome!</a>
+                <a class="nav-link navbar-dark bg-dark" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle navbar-dark bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Galleries     
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="landscape.html">Landscape</a>
+                  <a class="dropdown-item" href="pets.html">Pets</a>
+                  <a class="dropdown-item" href="astro.html">Astrophotography</a>
+                  <a class="dropdown-item" href="fam.html">Families</a>
+                  <a class="dropdown-item" href="travel.html">Travel</a>
+                  <a class="dropdown-item" href="port.html">People</a>
+                  <a class="dropdown-item" href="wild.html">Wildlife</a>
+                  <a class="dropdown-item" href="still.html">Still Life</a>
+                  <a class="dropdown-item" href="dig.html">Digital Art</a>
+                </div>
+              </div>
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Us</a>
-            </li>
+            </li> -->
         </ul>
         <button id="toggle-theme" class="btn btn-outline-secondary ml-3">Toggle light Mode</button>
     </div>
@@ -45,30 +61,69 @@
 
     <!-- Gallery Section -->
     <section id="gallery" class="my-5">
-        <h2 class="text-center">Gallery</h2>
+        <h2 class="text-center">Galleries</h2>
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-6               ">
                 <div class="gallery-item">
-                    <img src="image1.jpg" class="img-fluid" alt="Gallery Image 1">
-                    <p class="gallery-text">Description for Image 1</p>
+                    <a href="landscape.html">
+                        <img src="src/LandThumbweb.png"></a><p>Landscape</p>
+                    
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-6               ">
                 <div class="gallery-item">
-                    <img src="image2.jpg" class="img-fluid" alt="Gallery Image 2">
-                    <p class="gallery-text">Description for Image 2</p>
+                    <a href="pets.html">
+                        <img src="src/petsThumbweb.png"></a><p>Pets</p>
+                    
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-6               ">
                 <div class="gallery-item">
-                    <img src="image3.jpg" class="img-fluid" alt="Gallery Image 3">
-                    <p class="gallery-text">Description for Image 3</p>
+                    <a href="astro.html">
+                        <img src="src/astroThumbweb.png"></a><p>Astrophotography</p>
+                    
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-6               ">
                 <div class="gallery-item">
-                    <img src="image4.jpg" class="img-fluid" alt="Gallery Image 4">
-                    <p class="gallery-text">Description for Image 4</p>
+                    <a href="fam.html">
+                        <img src="src/familyThumbweb.png"></a><p>Families</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 mb-6               ">
+                <div class="gallery-item">
+                    <a href="travel.html">
+                        <img src="src/travelThumbweb.png"></a><p>Travel</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 mb-6               ">
+                <div class="gallery-item">
+                    <a href="port.html">
+                        <img src="src/seniorsThumbweb.png"></a><p>People</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 mb-6               ">
+                <div class="gallery-item">
+                    <a href="wild.html">
+                        <img src="src/wildlifeThumbweb.png"></a><p>Wildlife</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 mb-6               ">
+                <div class="gallery-item">
+                    <a href="still.html">
+                        <img src="src/stillLifeThumbweb.png"></a><p>Still Life</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 mb-6               ">
+                <div class="gallery-item">
+                    <a href="dig.html">
+                        <img src="src/digitalArtThumbweb.png"></a><p>Digital Art</p>
+                    
                 </div>
             </div>
         </div>
