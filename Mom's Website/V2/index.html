@@ -140,6 +140,19 @@
             </p>
         </div>
     </section>
+    <section class="my-5">
+        <p class="text-center">This page has been visited <b><span class="counter">0</span></b> times.</p>
+
+        <script>
+           // Fetch the current hit count from the server
+           fetch('counter.php')
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelector('.counter').textContent = data.count;
+                })
+                .catch(error => console.error('Error fetching counter:', error));
+        </script>   
+    </section>
 </div>
 
 </body>
